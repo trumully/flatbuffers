@@ -269,8 +269,7 @@ class TsGenerator : public BaseGenerator {
                     it.second.ns->components.end(),
                     std::back_inserter(rel_components));
         } else {
-          std::copy(it.second.ns->components.begin() +
-                        it.second.ns->components.size(),
+          std::copy(it.second.ns->components.begin(),
                     it.second.ns->components.end(),
                     std::back_inserter(rel_components));
         }
