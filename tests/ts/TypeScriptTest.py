@@ -40,12 +40,7 @@ flatc_path = Path(root_path, flatc_exe)
 assert flatc_path.exists(), "Cannot find the flatc compiler " + str(flatc_path)
 
 def check_call(args, cwd=tests_path):
-    try:
-        out = subprocess.check_output(args, cwd=str(cwd), shell=is_windows, stderr=subprocess.STDOUT)
-        print(out.decode("utf-8").rstrip())
-    except subprocess.CalledProcessError as e:
-        print(e.output.decode("utf-8").rstrip())
-        sys.exit(e.returncode)
+    subprocess.check_call(args, cwd=str(cwd), shell=is_windows)
 
 # Execute the flatc compiler with the specified parameters
 def flatc(options, schema, prefix=None, include=None, data=None, cwd=tests_path):
