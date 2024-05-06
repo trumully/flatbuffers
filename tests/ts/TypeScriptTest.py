@@ -134,7 +134,7 @@ flatc(
 )
 
 print("Running TypeScript Compiler...")
-check_call(["tsc"])
+check_call(["tsc", "--build", "--verbose"])
 print("Running TypeScript Compiler in old node resolution mode for no_import_ext...")
 check_call(["tsc", "-p", "./tsconfig.node.json"])
 
