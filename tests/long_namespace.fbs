@@ -1,4 +1,4 @@
-namespace com.company.test;
+namespace long_namespace.a.b;
 
 table Person {
   name:string;

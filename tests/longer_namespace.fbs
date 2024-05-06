@@ -1,4 +1,4 @@
-namespace a.b.c.d;
+namespace longer_namespace.a.b.c;
 
 table Person {
   name:string;
