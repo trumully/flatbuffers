@@ -266,13 +266,10 @@ class TsGenerator : public BaseGenerator {
         if (it.second.ns->components.size() > 0) {
           std::copy(it.second.ns->components.begin() +
                     it.second.ns->components.size() - 1,
-                    it.second.ns->components.end(),
-                    std::back_inserter(rel_components));
-        } else {
+        else
           std::copy(it.second.ns->components.begin(),
                     it.second.ns->components.end(),
                     std::back_inserter(rel_components));
-        }
         auto base_file_name =
             namer_.File(*(def.second), SkipFile::SuffixAndExtension);
         auto base_name =

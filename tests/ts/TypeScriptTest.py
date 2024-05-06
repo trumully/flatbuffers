@@ -131,7 +131,6 @@ flatc(
     options=["--ts"],
     schema="../longer_namespace.fbs"
 )
-
 print("Running TypeScript Compiler...")
 check_call(["tsc"])
 check_call(["tsc", "./a/b/c/d.ts"])
