@@ -129,7 +129,7 @@ flatc(
 
 flatc(
     options=["--ts"],
-    schema="../namespace.fbs"
+    schema="../longer_namespace.fbs"
 )
 
 print("Running TypeScript Compiler...")
