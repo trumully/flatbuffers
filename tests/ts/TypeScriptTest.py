@@ -127,13 +127,13 @@ flatc(
     options=["--ts"],
     schema="../long_namespace.fbs"
 )
-esbuild("./long_namespace/a/b.ts", "./long_namespace/long_namespace_generated.cjs")
+esbuild("./long-namespace/a/b.ts", "./long-namespace/long_namespace_generated.cjs")
 
 flatc(
     options=["--ts"],
     schema="../longer_namespace.fbs"
 )
-esbuild("./longer_namespace/a/b/c.ts", "./longer_namespace/longer_namespace_generated.cjs")
+esbuild("./longer-namespace/a/b/c.ts", "./longer-namespace/longer_namespace_generated.cjs")
 
 print("Running TypeScript Compiler...")
 check_call(["tsc"])
