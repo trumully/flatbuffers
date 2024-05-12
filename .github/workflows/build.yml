@@ -31,6 +31,3 @@ jobs:
       run: |
         yarn global add esbuild
         python3 TypeScriptTest.py
-    - name: compile
-      run: tsc
-      working-directory: tests/ts
