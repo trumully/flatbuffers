@@ -127,7 +127,7 @@ flatc(
     options=["--ts"],
     schema="../long_namespace.fbs"
 )
-esbuild("./long_namespace/b/c.ts", "./long_namespace/long_namespace_generated.cjs")
+esbuild("./long_namespace/a/b.ts", "./long_namespace/long_namespace_generated.cjs")
 
 flatc(
     options=["--ts"],
